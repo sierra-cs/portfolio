@@ -1,0 +1,539 @@
+/* =============================== Font Import & Body Styles =============================== */
+
+@font-face {
+    font-family: 'Italiana';
+    src: url('../assets/Fonts/italiana-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../assets/Fonts/sora-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/Fonts/jost-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/Fonts/jost-italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Brand Colors*/
+:root {
+    --Onyx: #262A2E;
+    --Mist: #ABBFB8;
+    --Matcha: #B9CBAF;
+    --Oat: #F1EADA;
+    --Eucalyptus: #3E5034;
+    --Pine: #40534C;
+    --Cedar: #693F0D;
+    --Espresso: #251E0E;
+    --Ash: #E3E4E1;
+
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--Oat); /* Oat */
+    color: var(--Onyx); /* Coal */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* Smooth scrolling and soft text shadows */
+h1, h2, h3, p {
+    text-shadow: 0 1px 2px rgba(0,  0, 0, 0.1); /* Soft shadows */
+}
+
+/* Standard link styling (text-decoration removal) */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Font Stylings */
+h1, h2 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+}
+
+
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+h4 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+.color-info p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    font-style: italic
+}
+
+
+/* =============================== Color Palette & Card Styles =============================== */
+
+/* Container for grouped colors (Neutrals, Primary, Accent) */
+.color-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.colors h3 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Onyx);
+    margin-bottom: 1rem;
+}
+
+/* Each individual color card */
+.color-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px dashed var(--Cedar);
+    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    padding: 1rem;
+    width: 100%;
+    max-width: 240px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Color swatch (square) */
+.color-swatch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: opacity 0.3s ease;
+}
+
+/* Info next to the swatch */
+.color-card h4 {
+    margin: 0 0 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Onyx);
+    font-family: 'Sora', sans-serif;
+}
+
+.color-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.swatch-container {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+/* Individual swatch colors */
+.oat {
+    background-color: var(--Oat);
+}
+.espresso {
+    background-color: var(--Espresso);
+}
+.onyx {
+    background-color: var(--Onyx);
+}
+.ash {
+    background-color: var(--Ash);
+}
+.eucalyptus {
+    background-color: var(--Eucalyptus);
+}
+.matcha {
+    background-color: var(--Matcha);
+}
+.pine {
+    background-color: var(--Pine);
+}
+.mist {
+    background-color: var(--Mist);
+}
+.cedar {
+    background-color: var(--Cedar);
+}
+
+/* =============================== Typography Styles =============================== */
+.typography-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.typography-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px dashed var(--Cedar);
+    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.typography-card h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--Onyx)
+}
+.sora {
+    font-family: 'Sora', sans-serif;
+    
+}
+.jost {
+    font-family: 'Jost', sans-serif;
+}
+.italiana {
+    font-family: 'Italiana', serif;
+}
+
+.typography-info {
+    display: none;
+    font-size: 0.9rem;
+    color: var(--Onyx);
+    line-height: 1.6;
+}
+
+.typography-info p {
+    margin: 0.25rem 0;
+}
+
+.typography-card h4 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Onyx);
+}
+
+.samples h4 {
+    text-align: center;
+}
+
+.samples-container {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+}
+
+.font-samples {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.typography-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* hidden default */
+    transition: opacity 0.3s ease;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+/* --- Font Samples --- */
+/* Sora */
+.sora-card .regular, .sora-card .bold, .sora-card .italic {
+    font-family: 'Sora', sans-serif;
+}
+
+.sora-card .bold {
+    font-weight: 700;
+}
+
+.sora-card .italic {
+    font-style: italic;
+}
+
+/* Jost */
+.jost-card .regular, .jost-card .bold, .jost-card .italic {
+    font-family: 'Jost', sans-serif;
+}
+
+.jost-card .bold {
+    font-weight: 700;
+}
+
+.jost-card .italic {
+    font-style: italic;
+}
+
+/* Italiana */
+.italiana-card .regular {
+    font-family: 'Italiana', serif;
+}
+/* =============================== Layout & Responsiveness =============================== */
+
+/* Give each section some spacing */
+section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings across sections */
+section h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* =============================== Page Title Styling =============================== */
+.page-title {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.page-title h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--Cedar); /* Forest Roast */
+    margin-bottom: 1rem;
+}
+
+/* =============================== Logo Cards Styling =============================== */
+.logo-content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+.logo-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px dashed var(--Cedar);
+    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    padding: 1rem;
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+.logo-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Oat);
+}
+.logo-display img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.logo-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    font-family: 'Italiana', serif;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.6;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none;
+    color: var(--Cedar);
+}
+/* Scrollbar styling for logo description */
+.logo-description::-webkit-scrollbar {
+    width: 8px;
+}
+.logo-description::-webkit-scrollbar-track {
+    background: transparent;
+}
+.logo-description::-webkit-scrollbar-thumb {
+    background-color: var(--Cedar);
+    border-radius: 4px;
+}
+.logo-description p {
+    margin: 0.5rem 0;
+}
+.logo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .page-title h1 {
+        font-size: 1.75rem;
+    }
+
+    #colors h2, h3 {
+        font-size: 1.15rem;
+    }
+
+    #colors h4 {
+        font-size: 1rem;
+    }
+
+    #typography h2 {
+        font-size: 1.15rem;
+    }
+
+    #typography h3 {
+        font-size: 1.05rem;
+    }
+
+    #typography h4 {
+        font-size: 1rem;
+    }
+
+
+    section {
+        padding: 2.5rem 1rem;
+    }
+
+    .color-card, .typography-card {
+        max-width: 100%;
+    }
+
+    .swatch-container {
+        width: 150px;
+        height: 250px;
+    }
+
+    .color-card {
+        height: auto;
+        min-height: 250px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 2rem 0.75rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .color-card, .typography-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .color-card {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .swatch-container {
+        width: 200px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .color-group, .typography-group {
+        gap: 1rem;
+    }
+
+    .color-info p, .typography-group p {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}

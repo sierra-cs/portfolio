@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="favicon" href="./assets/images/favicon-fullcolor.svg">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <main class="contact-main">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Email Me</h2>
+                <form action="https://formspree.io/f/xaqzalko" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">SEND</button>
+                </form>
+            </div>
+
+            <!-- OR Divider -->
+            <div class="contact-divider">
+                <span>OR</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-right">
+                <h2>Follow/Message Me</h2>
+                <div class="social-links">
+                    <a href="https://github.com/sierra-cs" target="_blank" class="social-link">
+                        <img src="./assets/images/icons/github.svg" alt="GitHub">
+                        <span>sierra-cs</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@sierracs.studio?_r=1&_t=ZP-97D6RS8nnjy" target="_blank" class="social-link">
+                        <img src="./assets/images/icons/tiktok.svg" alt="TikTok">
+                        <span>sierracs.studio</span>
+                    </a>
+                    <a href="https://www.instagram.com/sierracs.studio?igsh=MTRkZnUzbTl6bzJjeQ%3D%3D&utm_source=qr" target="_blank" class="social-link">
+                        <img src="./assets/images/icons/instagram.svg" alt="Instagram">
+                        <span>sierracs.studio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/global.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>

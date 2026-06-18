@@ -1,0 +1,170 @@
+/* FONT-FACE */
+@font-face {
+    font-family: 'Italiana';
+    src: url('../assets/fonts/italiana-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../assets/fonts/sora-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Brand Colors*/
+:root {
+    --Onyx: #262A2E;
+    --Mist: #ABBFB8;
+    --Matcha: #B9CBAF;
+    --Oat: #F1EADA;
+    --Eucalyptus: #3E5034;
+    --Pine: #40534C;
+    --Cedar: #693F0D;
+    --Espresso: #251E0E;
+    --Ash: #E3E4E1;
+
+}
+
+.lock-screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/renders/working_overnight.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 0 12vh 0;
+}
+
+.lock-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 42, 46, 0.6); /* Onyx with 60% opacity */
+    z-index: 1;
+}
+
+.datetime {
+    color: var(--Matcha);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: -6vh;
+}
+
+.time {
+    font-size: 11rem;
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    margin: -3vh;
+}
+.date {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Sora', sans-serif;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    margin-top: 25px;
+}
+
+.login-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--Espresso);
+    border-radius: 25px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--Espresso);
+    opacity: 50%;
+    color: var(--Oat);
+}
+
+.arrow-button {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--Espresso);
+    background: var(--Espresso); /* Fill is Espresso */
+    color: var(--Oat); /* Arrow is Oat */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    padding: 0;
+    aspect-ratio: 1/1;
+    opacity: 50%;
+}
+
+.arrow.button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow.button:hover {
+    background-color: var(--Cedar);
+    color: var(--Espresso);
+    transform: scale(1.1);
+}

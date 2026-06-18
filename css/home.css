@@ -1,0 +1,166 @@
+/* FONT-FACE */
+@font-face {
+    font-family: 'Italiana';
+    src: url('../assets/fonts/italiana-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../assets/fonts/sora-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Brand Colors*/
+:root {
+    --Onyx: #262A2E;
+    --Mist: #ABBFB8;
+    --Matcha: #B9CBAF;
+    --Oat: #F1EADA;
+    --Eucalyptus: #3E5034;
+    --Pine: #40534C;
+    --Cedar: #693F0D;
+    --Espresso: #251E0E;
+    --Ash: #E3E4E1;
+
+}
+
+/* Global Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Hero Styling */
+.hero h1 {
+    font-family: 'Italiana', serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: var(--Espresso);
+    line-height: 1;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 35px);
+    padding: 100px 80px 60px 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-line-one, .hero-line-two {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bitmoji {
+    height: 120px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.hero-render {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* Hero transition */
+#action, #adjective, .placeholder-visual {
+    transition: opacity 0.5s ease;
+}
+
+/* Quote Styling */
+.quote {
+    margin-top: 90px;
+    max-width: 1200px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--Espresso);
+    font-weight: 500;
+    text-align: center;
+}
+
+.quote a {
+    color: var(--Cedar);
+    text-decoration: underline;
+}
+
+/* CTA Styling*/
+.cta {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cta-btn {
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-family: 'Italiana', serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+.cta-works {
+    background-color: var(--Eucalyptus);
+    color: var(--Oat);
+}
+
+.cta-friends {
+    background-color: var(--Pine);
+    color: var(--Oat);
+}
+
+.cta-divider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost';
+    font-weight: 700;
+}
+.cta-divider::before, .cta-divider::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 40px;
+    background-color: var(--Espresso);
+}
+.cta-divider::before {
+    bottom: 100%;
+}
+.cta-divider::after {
+    top: 100%;
+}

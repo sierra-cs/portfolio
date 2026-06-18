@@ -1,0 +1,126 @@
+/* FONT-FACE */
+@font-face {
+    font-family: 'Italiana';
+    src: url('../assets/fonts/italiana-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../assets/fonts/sora-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-regular.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../assets/fonts/jost-italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Brand Colors*/
+:root {
+    --Onyx: #262A2E;
+    --Mist: #ABBFB8;
+    --Matcha: #B9CBAF;
+    --Oat: #F1EADA;
+    --Eucalyptus: #3E5034;
+    --Pine: #40534C;
+    --Cedar: #693F0D;
+    --Espresso: #251E0E;
+    --Ash: #E3E4E1;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* About Info Styling */
+.about-main {
+    padding: 40px 60px;
+    min-height: 80vh;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+.about-left {
+    flex: 1.5;
+}
+.about-right {
+    flex: 1;
+}
+
+/* Skills & Tools */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Section Spacing */
+.about-me, .beyond-work {
+    margin-bottom: 40px;
+}
+
+.skills-text, .tools-text {
+    margin-bottom: 12px;
+}
+
+/* Headings & Body Styling */
+.about-me h2, .skills-tools h2, .beyond-work h2 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    color: var(--Espresso);
+    margin-bottom: 16px;
+}
+
+.about-me p, .beyond-work p {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--Espresso);
+    margin-bottom: 16px;
+}
+
+.skills-text p, .tools-text p {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: var(--Espresso);
+    margin-bottom: 12px;
+}
