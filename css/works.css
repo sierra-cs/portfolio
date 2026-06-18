@@ -262,3 +262,67 @@ main {
     min-height: 80px;
     border: 1px solid var(--Mist);
 }
+
+/* Mobile Sizing */
+@media (max-width: 768px) {
+    .works-main {
+        padding: 30px 24px;
+    }
+    .works-grid {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .works-main {
+        padding: 24px 16px;
+    }
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .project-name {
+        font-size: 16px;
+    }
+}
+
+/* Project Modal */
+@media (max-width: 768px) {
+    .project-modal {
+        width: 90%;
+        padding: 20px;
+        max-height: 85vh;
+    }
+    .modal-body {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .modal-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-modal {
+        width: 92%;
+        padding: 16px;
+    }
+    .modal-title {
+        font-size: 1.25rem;
+    }
+    .modal-header {
+        gap: 10px;
+    }
+    .modal-close {
+        flex-shrink: 0;
+    }
+    .modal-section p {
+        font-size: 13px;
+    }
+    .screenshot-grid {
+        gap: 8px;
+    }
+    .screenshot-small {
+        min-height: 60px;
+    }
+}

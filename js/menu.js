@@ -105,6 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(logoMenu);
 
+    // Logo backdrop
+    const logoMenuBackdrop = document.createElement('div');
+    logoMenuBackdrop.className = 'logo-menu-backdrop';
+    document.body.appendChild(logoMenuBackdrop);
+
+    logoButton.addEventListener('click', () => {
+        logoMenu.classList.toggle('active');
+        logoMenuBackdrop.classList.toggle('active');
+});
+
+    logoMenuBackdrop.addEventListener('click', () => {
+        logoMenu.classList.remove('active');
+        logoMenuBackdrop.classList.remove('active');
+});
+
 
     const logoButton = document.querySelector(".menu-logo");
     logoButton.addEventListener('click', () => {

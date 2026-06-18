@@ -164,3 +164,46 @@ main {
 .cta-divider::after {
     top: 100%;
 }
+
+/* Mobile Resizing */
+/* Tablet */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 56px;
+    }
+    .bitmoji {
+        height: 70px;
+    }
+    .hero-render {
+        height: 70px;
+        width: 70px;
+    }
+    .hero-line-one, .hero-line-two {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .home-main {
+        padding: 90px 30px 50px 30px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .bitmoji {
+        height: 44px;
+    }
+    .hero-render {
+        height: 44px;
+        width: 44px;
+    }
+    .hero-line-one, .hero-line-two {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .home-main {
+        padding: 70px 20px 40px 20px;
+    }
+}
