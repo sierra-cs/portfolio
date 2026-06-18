@@ -109,30 +109,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoMenuBackdrop = document.createElement('div');
     logoMenuBackdrop.className = 'logo-menu-backdrop';
     document.body.appendChild(logoMenuBackdrop);
-    
+
     const logoButton = document.querySelector(".menu-logo");
 
     logoButton.addEventListener('click', () => {
         logoMenu.classList.toggle('active');
         logoMenuBackdrop.classList.toggle('active');
-});
+    });
 
     logoMenuBackdrop.addEventListener('click', () => {
         logoMenu.classList.remove('active');
         logoMenuBackdrop.classList.remove('active');
-});
-
-
-
-    logoButton.addEventListener('click', () => {
-        logoMenu.classList.toggle('active');
     });
 
     // Menu event listeners
     document.querySelectorAll('.decorative-item').forEach(item => {
         item.addEventListener('click', () => {
             logoMenu.classList.remove('active');
-            logoMenuBackdrop.classList('active');
+            logoMenuBackdrop.classList.remove('active');
         });
     });
 
