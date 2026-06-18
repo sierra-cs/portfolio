@@ -159,6 +159,7 @@ body::after {
     margin-left: 2px;
     opacity: 0.9;
     padding: 6px;
+    z-index: 1001;
 }
 .logo-menu.active {
     display: block;
