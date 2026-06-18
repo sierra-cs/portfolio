@@ -6,8 +6,8 @@ const projects = {
         info: 'Project description',
         goal: 'Purpose and goal',
         techStack: 'HTML, CSS, JavaScript',
-        liveLink: '#',
-        githubLink: 'https://github.com/sierra-cs/portfolio-site',
+        liveLink: 'https://sierra-cs.github.io/portfolio/index.html',
+        githubLink: 'https://github.com/sierra-cs/portfolio',
         screenshots: [
             './assets/images/project-screenshots/portfolio/portfolio-main.png', 
             './assets/images/project-screenshots/portfolio/portfolio-2.png', 
@@ -22,8 +22,8 @@ const projects = {
         info: 'Project description',
         goal: 'Purpose and goal',
         techStack: 'HTML, CSS, JavaScript',
-        liveLink: 'https://sierra-cs.github.io/portfolio-site/',
-        githubLink: 'https://github.com/sierra-cs/portfolio-site',
+        liveLink: 'https://sierra-cs.github.io/portfolio/designsys.html',
+        githubLink: 'https://github.com/sierra-cs/portfolio',
         screenshots: [
             './assets/images/project-screenshots/design-system/design-system-main.png',
             './assets/images/project-screenshots/design-system/design-system-2.png',
@@ -40,8 +40,8 @@ const projects = {
         info: 'Cadence is a task and habit tracking app designed with a self-awareness first philosophy. Built with React, it helps users build consistent routines without the guilt of missed streaks. The interface features a liquid glass visual aesthetic and a forgiving streak model that focuses on progress over perfection.',
         goal: 'The goal of Cadence is to create a productivity tool that feels human; one that coaches rather punishes. Designed for people who want to build better habits without the anxiety of traditional habit trackers. Currently in active development as my primary React portfolio project.',
         techStack: 'React, JavaScript, CSS',
-        liveLink: '#',
-        githubLink: '#',
+        liveLink: 'https://sierra-cs.github.io/Cadence-app/',
+        githubLink: 'https://github.com/sierra-cs/Cadence-app',
         screenshots: [
             './assets/images/project-screenshots/cadence/cadence-main.png', 
             './assets/images/project-screenshots/cadence/cadence-2.png',

@@ -367,3 +367,72 @@ body::after {
     padding: 0;
     overflow-y: auto;
 }
+
+/* Mobile Sizing */
+/* Tablet */
+@media (max-width: 768px) {
+    .menu-left {
+        gap: 10px;
+    }
+    .menu-subtext {
+        display: none;
+    }
+    .about-modal {
+        width: 340px;
+    }
+    .main-nav {
+        gap: 6px;
+        padding: 8px 12px;
+    }
+    .main-nav a {
+        font-size: 15px;
+    }
+    .app-window {
+        margin: 45px 12px 12px 12px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .menu-bar {
+        padding: 0 10px;
+    }
+    .menu-left {
+        gap: 8px;
+    }
+    .menu-text {
+        font-size: 11px;
+    }
+    .menu-right {
+        gap: 6px;
+    }
+    .date-time {
+        font-size: 10px;
+    }
+    .about-modal {
+        width: 90%;
+        max-width: 320px;
+        padding: 16px;
+    }
+    .website-stats {
+        font-size: 14px;
+    }
+    .main-nav {
+        gap: 4px;
+        padding: 6px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-nav a {
+        font-size: 13px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+        font-size: 11px;
+    }
+    .app-window {
+        margin: 42px 8px 8px 8px;
+    }
+}

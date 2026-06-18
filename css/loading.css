@@ -168,3 +168,63 @@
     color: var(--Espresso);
     transform: scale(1.1);
 }
+
+/* Mobile Sizing */
+/* Tablet */
+@media (max-width: 768px) {
+    .time {
+        font-size: 6rem;
+        margin: -2vh;
+    }
+    .date {
+        font-size: 1.5rem;
+    }
+    .datetime {
+        margin: -3vh;
+    }
+    .lock-screen {
+        padding: 8vh 0 10vh 0;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .time {
+        font-size: 3.5rem;
+        margin: -1vh;
+    }
+    .date {
+        font-size: 1.1rem;
+    }
+    .datetime {
+        margin: -2vh;
+    }
+    .login-input {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+    .profile-logo {
+        width: 90px;
+        height: 90px;
+    }
+    .lock-screen {
+        padding: 6vh 0 8vh 0;
+    }
+}
+
+/* Landscrape phone specifically */
+@media (max-height: 500px) and (orientation: landscape) {
+    .lock-screen {
+        padding: 4vh 0 4vh 0;
+    }
+    .time {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .datetime {
+        margin: 0;
+    }
+    .login-section {
+        gap: 16px;
+    }
+}
