@@ -25,23 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.prepend(menuBar);
 
     function updateDateTime() {
-    const now = new Date();
+        const now = new Date();
 
-    // Time in 12-hour format (no AM/PM)
-    let hours = now.getHours();
-    const minutes = String(now.getMinutes()).padStart(2, '0');
+        // Time in 12-hour format (no AM/PM)
+        let hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, '0');
 
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // 0 should be 12
-    const timeString = `${hours}:${minutes} ${ampm}`;
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // 0 should be 12
+        const timeString = `${hours}:${minutes} ${ampm}`;
 
-    // Date
-    const dateString = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        // Date
+        const dateString = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
-    // DateTime
-    document.getElementById('dateTime').textContent = `${dateString} ${timeString}`;
-}
+        // DateTime
+        document.getElementById('dateTime').textContent = `${dateString} ${timeString}`;
+    }
 
     updateDateTime();
     setInterval(updateDateTime, 60000);
@@ -285,4 +285,3 @@ document.addEventListener('DOMContentLoaded', () => {
     appWindow.appendChild(windowContent);
     document.body.insertBefore(appWindow, footer);
 });
-

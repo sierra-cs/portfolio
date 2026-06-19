@@ -3,8 +3,8 @@ const projects = {
     portfolio: {
         name: 'SierraCS Studio Portfolio',
         year: '2025',
-        info: 'Project description',
-        goal: 'Purpose and goal',
+        info: 'SierraCS Studio Portfolio reimagines a personal site as a Mac-inspired desktop experience, complete with a lock screen, menu bar, and app window shell. Built with vanilla HTML, CSS, and JavaScript, it showcases my work through an interface that feels alive rather than static.',
+        goal: 'The goal of this portfolio is to prove that a personal site can be both a resume and a piece of design work in itself. Built to introduce SierraCS Studio and demonstrate front-end fundamentals, creative UI thinking, and attention to detail without relying on a framework.',
         techStack: 'HTML, CSS, JavaScript',
         liveLink: 'https://sierra-cs.github.io/portfolio/index.html',
         githubLink: 'https://github.com/sierra-cs/portfolio',
@@ -19,8 +19,8 @@ const projects = {
     'design-system': {
         name: 'SierraCS Studio Design System',
         year: '2025',
-        info: 'Project description',
-        goal: 'Purpose and goal',
+        info: 'The SierraCS Studio Design System documents the visual language behind my brand: a neutral, green-forward color palette, a deliberate typography pairing, and the reusable components that hold the portfolio together.',
+        goal: 'The goal of this design system is to keep SierraCS Studio consistent and scalable as new projects are added. It exists as both a practical reference for my own work and a demonstration of how I think about design systems, tokens, and component reuse.',
         techStack: 'HTML, CSS, JavaScript',
         liveLink: 'https://sierra-cs.github.io/portfolio/designsys.html',
         githubLink: 'https://github.com/sierra-cs/portfolio',
@@ -55,8 +55,8 @@ const projects = {
     jammming: {
         name: 'Jammming',
         year: '2026',
-        info: 'Project description',
-        goal: 'Purpose and goal',
+        info: 'Jammming is a playlist-building app that connects to the Spotify Web API, letting users search for songs and assemble custom playlists to save directly to their Spotify account.',
+        goal: 'The goal of Jammming was to practice working with a real third-party API and managing asynchronous data in a JavaScript-only project, outside of a framework. Note: a live demo requires Spotify Premium API access, which is no longer available after August 2026 — see the GitHub repo for the full code.',
         techStack: 'JavaScript, CSS, HTML',
         githubLink: 'https://github.com/sierra-cs/Jammming',
         screenshots: [
