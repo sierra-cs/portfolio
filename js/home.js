@@ -1,6 +1,6 @@
 const states = [
-    { action: 'I design,', visual: './assets/images/renders/render-design.png', adjective: 'engaging interfaces'},
-    {action: 'I develop,', visual: './assets/images/renders/render-develop.png', adjective: 'dynamic interfaces'}
+    { action: 'I design,', visual: './assets/images/renders/render-design.png', adjective: 'engaging interfaces' },
+    { action: 'I develop,', visual: './assets/images/renders/render-develop.png', adjective: 'dynamic interfaces' }
 ];
 
 const actionEl = document.getElementById('action');
@@ -25,7 +25,7 @@ function rotateState() {
         // Fade back in
         actionEl.style.opacity = '1';
         adjEl.style.opacity = '1';
-        visualEl.style.opacity  = '1';
+        visualEl.style.opacity = '1';
     }, 500);
 };
 setInterval(rotateState, 3000);

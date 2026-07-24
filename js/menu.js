@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateDateTime();
     setInterval(updateDateTime, 60000);
-    
+
     // Sleep overlay for injection
     const sleepOverlay = document.createElement('div');
     sleepOverlay.id = 'sleepOverlay';

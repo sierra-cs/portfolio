@@ -70,6 +70,7 @@ main {
 .about-left {
     flex: 1.5;
 }
+
 .about-right {
     flex: 1;
 }
@@ -94,23 +95,28 @@ main {
 }
 
 /* Section Spacing */
-.about-me, .beyond-work {
+.about-me,
+.beyond-work {
     margin-bottom: 40px;
 }
 
-.skills-text, .tools-text {
+.skills-text,
+.tools-text {
     margin-bottom: 12px;
 }
 
 /* Headings & Body Styling */
-.about-me h2, .skills-tools h2, .beyond-work h2 {
+.about-me h2,
+.skills-tools h2,
+.beyond-work h2 {
     font-family: 'Italiana', serif;
     font-size: 2rem;
     color: var(--Espresso);
     margin-bottom: 16px;
 }
 
-.about-me p, .beyond-work p {
+.about-me p,
+.beyond-work p {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     line-height: 1.8;
@@ -118,7 +124,8 @@ main {
     margin-bottom: 16px;
 }
 
-.skills-text p, .tools-text p {
+.skills-text p,
+.tools-text p {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     color: var(--Espresso);

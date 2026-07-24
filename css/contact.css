@@ -71,7 +71,8 @@ main {
     width: 100%;
 }
 
-.contact-left, .contact-right {
+.contact-left,
+.contact-right {
     flex: 1;
 }
 
@@ -108,7 +109,8 @@ main {
     font-size: 20px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     background-color: var(--Mist);
     border: solid 1px var(--Pine);
@@ -138,6 +140,7 @@ label {
     flex: 1;
     min-width: 0;
 }
+
 .form-row {
     display: flex;
     gap: 16px;
@@ -157,7 +160,8 @@ label {
     float: right;
 }
 
-.contact-left h2, .contact-right h2 {
+.contact-left h2,
+.contact-right h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -215,7 +219,8 @@ label {
         padding: 24px 16px;
     }
 
-    .contact-left h2, .contact-right h2 {
+    .contact-left h2,
+    .contact-right h2 {
         font-size: 20px;
     }
 

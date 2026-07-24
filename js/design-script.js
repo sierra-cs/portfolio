@@ -25,13 +25,13 @@ cards.forEach(card => {
             swatch.style.opacity = '0';
             info.style.opacity = '1';
         }, 500);
-        
+
     });
 
     card.addEventListener('touchend', () => {
         clearTimeout(holdTimer);
-            swatch.style.opacity = '1';
-            info.style.opacity = '0';
+        swatch.style.opacity = '1';
+        info.style.opacity = '0';
     });
 });
 
@@ -63,23 +63,23 @@ fonts.forEach(font => {
             text.style.opacity = '0';
             info.style.opacity = '1';
         }, 500);
-        
+
     });
 
     font.addEventListener('touchend', () => {
         clearTimeout(holdTimer);
-            text.style.opacity = '1';
-            info.style.opacity = '0';
+        text.style.opacity = '1';
+        info.style.opacity = '0';
     });
 });
 
 /* Hover Interaction for Logos & Button Interactivity */
 const primaryLogo = ['./assets/design-system logos/primary-fullcolor.svg', './assets/design-system logos/primary-greyscale.svg'];
 const faviconLogo = ['./assets/design-system logos/favicon-fullcolor.svg', './assets/design-system logos/favicon-greyscale.svg'];
-const designerLogo = ['./assets/design-system logos/designer-euconyx.svg', './assets/design-system logos/designer-eucash.svg', './assets/design-system logos/designer-matonyx.svg', 
-    './assets/design-system logos/designer-matash.svg', './assets/design-system logos/designer-mistonyx.svg', './assets/design-system logos/designer-mistash.svg', 
+const designerLogo = ['./assets/design-system logos/designer-euconyx.svg', './assets/design-system logos/designer-eucash.svg', './assets/design-system logos/designer-matonyx.svg',
+    './assets/design-system logos/designer-matash.svg', './assets/design-system logos/designer-mistonyx.svg', './assets/design-system logos/designer-mistash.svg',
     './assets/design-system logos/designer-pineonyx.svg', './assets/design-system logos/designer-pineash.svg'];
-const personalLogo = ['../assets/design-system logos/personal-grad1onyx.svg', './assets/design-system logos/personal-grad1ash.svg', 
+const personalLogo = ['../assets/design-system logos/personal-grad1onyx.svg', './assets/design-system logos/personal-grad1ash.svg',
     './assets/design-system logos/personal-grad2onyx.svg', './assets/design-system logos/personal-grad2ash.svg'];
 
 // Primary & Favicon Info

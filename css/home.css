@@ -74,7 +74,8 @@ main {
     text-align: center;
 }
 
-.hero-line-one, .hero-line-two {
+.hero-line-one,
+.hero-line-two {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -94,7 +95,9 @@ main {
 }
 
 /* Hero transition */
-#action, #adjective, .placeholder-visual {
+#action,
+#adjective,
+.placeholder-visual {
     transition: opacity 0.5s ease;
 }
 
@@ -131,6 +134,7 @@ main {
     font-size: 24px;
     text-decoration: none;
 }
+
 .cta-works {
     background-color: var(--Eucalyptus);
     color: var(--Oat);
@@ -150,7 +154,9 @@ main {
     font-family: 'Jost';
     font-weight: 700;
 }
-.cta-divider::before, .cta-divider::after {
+
+.cta-divider::before,
+.cta-divider::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -158,9 +164,11 @@ main {
     height: 40px;
     background-color: var(--Espresso);
 }
+
 .cta-divider::before {
     bottom: 100%;
 }
+
 .cta-divider::after {
     top: 100%;
 }
@@ -171,17 +179,22 @@ main {
     .hero h1 {
         font-size: 56px;
     }
+
     .bitmoji {
         height: 70px;
     }
+
     .hero-render {
         height: 70px;
         width: 70px;
     }
-    .hero-line-one, .hero-line-two {
+
+    .hero-line-one,
+    .hero-line-two {
         gap: 12px;
         flex-wrap: wrap;
     }
+
     .home-main {
         padding: 90px 30px 50px 30px;
     }
@@ -192,17 +205,22 @@ main {
     .hero h1 {
         font-size: 32px;
     }
+
     .bitmoji {
         height: 44px;
     }
+
     .hero-render {
         height: 44px;
         width: 44px;
     }
-    .hero-line-one, .hero-line-two {
+
+    .hero-line-one,
+    .hero-line-two {
         gap: 8px;
         flex-wrap: wrap;
     }
+
     .home-main {
         padding: 70px 20px 40px 20px;
     }

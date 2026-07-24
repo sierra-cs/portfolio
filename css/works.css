@@ -192,7 +192,8 @@ main {
     gap: 40px;
 }
 
-.modal-left, .modal-right {
+.modal-left,
+.modal-right {
     flex: 1;
 }
 
@@ -229,6 +230,7 @@ main {
     border-bottom: 1px solid var(--Mist);
     padding-bottom: 2px;
 }
+
 .modal-links a:hover {
     color: var(--Oat);
     border-bottom-color: var(--Oat);
@@ -268,6 +270,7 @@ main {
     .works-main {
         padding: 30px 24px;
     }
+
     .works-grid {
         gap: 24px;
     }
@@ -277,10 +280,12 @@ main {
     .works-main {
         padding: 24px 16px;
     }
+
     .works-grid {
         grid-template-columns: 1fr;
         gap: 28px;
     }
+
     .project-name {
         font-size: 16px;
     }
@@ -293,10 +298,12 @@ main {
         padding: 20px;
         max-height: 85vh;
     }
+
     .modal-body {
         flex-direction: column;
         gap: 24px;
     }
+
     .modal-title {
         font-size: 1.5rem;
     }
@@ -307,21 +314,27 @@ main {
         width: 92%;
         padding: 16px;
     }
+
     .modal-title {
         font-size: 1.25rem;
     }
+
     .modal-header {
         gap: 10px;
     }
+
     .modal-close {
         flex-shrink: 0;
     }
+
     .modal-section p {
         font-size: 13px;
     }
+
     .screenshot-grid {
         gap: 8px;
     }
+
     .screenshot-small {
         min-height: 60px;
     }

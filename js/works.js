@@ -9,9 +9,9 @@ const projects = {
         liveLink: 'https://sierra-cs.github.io/portfolio/index.html',
         githubLink: 'https://github.com/sierra-cs/portfolio',
         screenshots: [
-            './assets/images/project-screenshots/portfolio/portfolio-main.png', 
-            './assets/images/project-screenshots/portfolio/portfolio-2.png', 
-            './assets/images/project-screenshots/portfolio/portfolio-3.png', 
+            './assets/images/project-screenshots/portfolio/portfolio-main.png',
+            './assets/images/project-screenshots/portfolio/portfolio-2.png',
+            './assets/images/project-screenshots/portfolio/portfolio-3.png',
             './assets/images/project-screenshots/portfolio/portfolio-4.png',
             './assets/images/project-screenshots/portfolio/portfolio-5.png'
         ]
@@ -43,7 +43,7 @@ const projects = {
         liveLink: 'https://sierra-cs.github.io/Cadence-app/',
         githubLink: 'https://github.com/sierra-cs/Cadence-app',
         screenshots: [
-            './assets/images/project-screenshots/cadence/cadence-main.png', 
+            './assets/images/project-screenshots/cadence/cadence-main.png',
             './assets/images/project-screenshots/cadence/cadence-2.png',
             './assets/images/project-screenshots/cadence/cadence-3.png',
             './assets/images/project-screenshots/cadence/cadence-4.png'
@@ -119,22 +119,22 @@ function openProjectModal(project) {
                     <img src="${project.screenshots[0]}" alt="Main screenshot" class="screenshot-main">
                     <div class="screenshot-grid">
                         ${(() => {
-                            const gridItems = [
-                                ...project.screenshots.slice(1).map(src => ({ type: 'image', src })),
-                                ...(project.videos || []).map(src => ({ type: 'video', src}))
-                            ];
-                            return gridItems.map((item, i) =>
-                                item.type === 'video'
-                                    ? `<video src="${item.src}" alt="Screenshot ${i + 1}" class="screenshot-small" autoplay loop muted playsline></video>`
-                                    : `<img src="${item.src}" alt="Screenshot ${i + 1}" class="screenshot-small">`
-                            ).join('');
-                        })()}
+            const gridItems = [
+                ...project.screenshots.slice(1).map(src => ({ type: 'image', src })),
+                ...(project.videos || []).map(src => ({ type: 'video', src }))
+            ];
+            return gridItems.map((item, i) =>
+                item.type === 'video'
+                    ? `<video src="${item.src}" alt="Screenshot ${i + 1}" class="screenshot-small" autoplay loop muted playsline></video>`
+                    : `<img src="${item.src}" alt="Screenshot ${i + 1}" class="screenshot-small">`
+            ).join('');
+        })()}
                     </div>
                 </div>
             </div>
         </div>
     `;
-    
+
     // Show backdrop and modal
     projectBackdrop.style.opacity = '0.5';
     projectBackdrop.style.pointerEvents = 'all';

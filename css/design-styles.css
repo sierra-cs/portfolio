@@ -49,8 +49,10 @@
 /* Global Body Styles */
 body {
     font-family: 'Jost', sans-serif;
-    background-color: var(--Oat); /* Oat */
-    color: var(--Onyx); /* Coal */
+    background-color: var(--Oat);
+    /* Oat */
+    color: var(--Onyx);
+    /* Coal */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -61,8 +63,12 @@ body {
 
 
 /* Smooth scrolling and soft text shadows */
-h1, h2, h3, p {
-    text-shadow: 0 1px 2px rgba(0,  0, 0, 0.1); /* Soft shadows */
+h1,
+h2,
+h3,
+p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* Soft shadows */
 }
 
 /* Standard link styling (text-decoration removal) */
@@ -72,7 +78,8 @@ a {
 }
 
 /* Font Stylings */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Sora', sans-serif;
     font-weight: 700;
 }
@@ -83,10 +90,12 @@ h3 {
     font-weight: 600;
     font-size: 1.5rem;
 }
+
 h4 {
     font-family: 'Jost', sans-serif;
     font-weight: 500;
 }
+
 .color-info p {
     font-family: 'Jost', sans-serif;
     font-weight: 200;
@@ -118,7 +127,7 @@ h4 {
     background-color: white;
     border-radius: 8px;
     border: 1px dashed var(--Cedar);
-    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem;
     width: 100%;
     max-width: 240px;
@@ -178,27 +187,35 @@ h4 {
 .oat {
     background-color: var(--Oat);
 }
+
 .espresso {
     background-color: var(--Espresso);
 }
+
 .onyx {
     background-color: var(--Onyx);
 }
+
 .ash {
     background-color: var(--Ash);
 }
+
 .eucalyptus {
     background-color: var(--Eucalyptus);
 }
+
 .matcha {
     background-color: var(--Matcha);
 }
+
 .pine {
     background-color: var(--Pine);
 }
+
 .mist {
     background-color: var(--Mist);
 }
+
 .cedar {
     background-color: var(--Cedar);
 }
@@ -216,7 +233,7 @@ h4 {
     background-color: white;
     border-radius: 8px;
     border: 1px dashed var(--Cedar);
-    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem;
     width: 100%;
     max-width: 300px;
@@ -233,13 +250,16 @@ h4 {
     font-weight: 400;
     color: var(--Onyx)
 }
+
 .sora {
     font-family: 'Sora', sans-serif;
-    
+
 }
+
 .jost {
     font-family: 'Jost', sans-serif;
 }
+
 .italiana {
     font-family: 'Italiana', serif;
 }
@@ -286,7 +306,8 @@ h4 {
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0; /* hidden default */
+    opacity: 0;
+    /* hidden default */
     transition: opacity 0.3s ease;
     background-color: white;
     padding: 1rem;
@@ -295,9 +316,12 @@ h4 {
     justify-content: center;
     box-sizing: border-box;
 }
+
 /* --- Font Samples --- */
 /* Sora */
-.sora-card .regular, .sora-card .bold, .sora-card .italic {
+.sora-card .regular,
+.sora-card .bold,
+.sora-card .italic {
     font-family: 'Sora', sans-serif;
 }
 
@@ -310,7 +334,9 @@ h4 {
 }
 
 /* Jost */
-.jost-card .regular, .jost-card .bold, .jost-card .italic {
+.jost-card .regular,
+.jost-card .bold,
+.jost-card .italic {
     font-family: 'Jost', sans-serif;
 }
 
@@ -326,6 +352,7 @@ h4 {
 .italiana-card .regular {
     font-family: 'Italiana', serif;
 }
+
 /* =============================== Layout & Responsiveness =============================== */
 
 /* Give each section some spacing */
@@ -355,7 +382,8 @@ section h2 {
     font-family: 'Sora', sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--Cedar); /* Forest Roast */
+    color: var(--Cedar);
+    /* Forest Roast */
     margin-bottom: 1rem;
 }
 
@@ -365,11 +393,12 @@ section h2 {
     width: 300px;
     height: 400px;
 }
+
 .logo-card {
     background-color: white;
     border-radius: 8px;
     border: 1px dashed var(--Cedar);
-    box-shadow: 0 4px 8px rgba(0,  0, 0, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem;
     width: 100%;
     max-width: 320px;
@@ -379,6 +408,7 @@ section h2 {
     align-items: center;
     gap: 0.75rem;
 }
+
 .logo-display {
     position: absolute;
     top: 0;
@@ -393,11 +423,13 @@ section h2 {
     align-items: center;
     background-color: var(--Oat);
 }
+
 .logo-display img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
+
 .logo-description {
     position: absolute;
     top: 0;
@@ -424,20 +456,25 @@ section h2 {
     pointer-events: none;
     color: var(--Cedar);
 }
+
 /* Scrollbar styling for logo description */
 .logo-description::-webkit-scrollbar {
     width: 8px;
 }
+
 .logo-description::-webkit-scrollbar-track {
     background: transparent;
 }
+
 .logo-description::-webkit-scrollbar-thumb {
     background-color: var(--Cedar);
     border-radius: 4px;
 }
+
 .logo-description p {
     margin: 0.5rem 0;
 }
+
 .logo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -445,6 +482,7 @@ section h2 {
     justify-content: center;
     margin-top: 2rem;
 }
+
 .nav-btns {
     display: flex;
     align-items: center;
@@ -459,7 +497,8 @@ section h2 {
         font-size: 1.75rem;
     }
 
-    #colors h2, h3 {
+    #colors h2,
+    h3 {
         font-size: 1.15rem;
     }
 
@@ -484,7 +523,8 @@ section h2 {
         padding: 2.5rem 1rem;
     }
 
-    .color-card, .typography-card {
+    .color-card,
+    .typography-card {
         max-width: 100%;
     }
 
@@ -509,7 +549,8 @@ section h2 {
         font-size: 1.75rem;
     }
 
-    .color-card, .typography-card {
+    .color-card,
+    .typography-card {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -525,11 +566,13 @@ section h2 {
         margin: 0 auto;
     }
 
-    .color-group, .typography-group {
+    .color-group,
+    .typography-group {
         gap: 1rem;
     }
 
-    .color-info p, .typography-group p {
+    .color-info p,
+    .typography-group p {
         font-size: 0.9rem;
     }
 

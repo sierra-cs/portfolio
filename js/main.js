@@ -4,11 +4,11 @@ function updateDateTime() {
     // Time in 12-hour format (no AM/PM)
     let hours = now.getHours();
     const minutes = String(now.getMinutes()).padStart(2, '0');
-    
+
     hours = hours % 12;
     hours = hours ? hours : 12; // 0 should be 12
     const timeString = `${hours}:${minutes}`;
-    
+
     document.getElementById('time').textContent = timeString;
 
     // Date
