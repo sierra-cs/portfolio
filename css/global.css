@@ -429,18 +429,39 @@ body::after {
 
     .window-btn {
         position: relative;
-        padding: 10px;
-        margin: -10px;
+    }
+
+    .window-btn::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 44px;
+        height: 44px;
     }
 
     .modal-close {
-        padding: 12px;
-        margin: -12px;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .menu-logo {
-        padding: 8px;
-        margin: -8px;
+        position: relative;
+
+    }
+
+    .menu-logo {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 44px;
+        height: 44px;
     }
 }
 
