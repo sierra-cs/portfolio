@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     aboutModal.innerHTML = `
         <div class="about-menu about-buttons">
-            <button class="about-item" id="closeAbout" aria-modal="Close about modal">X</button>
+            <button class="about-item" id="closeAbout" aria-label="Close about modal">X</button>
             <button class="about-item decorative-button" id="secondCircle" aria-label="Decorative button"></button>
             <button class="about-item decorative-button" id="thirdCircle" aria-label="Decorative button"></button>
         </div>
@@ -272,9 +272,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     appWindow.innerHTML = `
         <div class="window-controls">
-            <button class="window-btn close-btn" aria-label="Close window"></button>
-            <button class="window-btn minimize-btn" aria-label="Minimize window"></button>
-            <button class="window-btn maximize-btn" aria-label="Maximize window"></button>
+            <button class="window-btn close-btn" aria-label="Close window" aria-hidden="true" tabindex="-1"></button>
+            <button class="window-btn minimize-btn" aria-label="Minimize window" aria-hidden="true" tabindex="-1"></button>
+            <button class="window-btn maximize-btn" aria-label="Maximize window" aria-hidden="true" tabindex="-1"></button>
         </div>
     `;
 
