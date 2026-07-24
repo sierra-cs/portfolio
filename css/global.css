@@ -455,3 +455,20 @@ body::after {
         font-size: 11px;
     }
 }
+
+/* Touch target sizing for accessibility */
+.window-btn {
+    position: relative;
+    padding: 10px;
+    margin: -10px;
+}
+
+.modal-close {
+    padding: 12px;
+    margin: -12px;
+}
+
+.menu-logo {
+    padding: 8px;
+    margin: -8px;
+}

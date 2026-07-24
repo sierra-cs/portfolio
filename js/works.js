@@ -93,7 +93,7 @@ function openProjectModal(project) {
     projectModal.innerHTML = `
         <div class="modal-header">
             <h2 class="modal-title">${project.name}</h2>
-            <button class="modal-close" id="closeProject">X</button>
+            <button class="modal-close" id="closeProject" aria-label="Close project modal">X</button>
         </div>
         <div class="modal-body">
             <div class="modal-left">
