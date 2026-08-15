@@ -31,20 +31,6 @@
     font-display: swap;
 }
 
-/* Brand Colors*/
-:root {
-    --Onyx: #262A2E;
-    --Mist: #ABBFB8;
-    --Matcha: #B9CBAF;
-    --Oat: #F1EADA;
-    --Eucalyptus: #3E5034;
-    --Pine: #40534C;
-    --Cedar: #693F0D;
-    --Espresso: #251E0E;
-    --Ash: #E3E4E1;
-
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -130,4 +116,29 @@ main {
     font-size: 16px;
     color: var(--Espresso);
     margin-bottom: 12px;
+}
+
+/* Responsiveness*/
+@media (max-width: 900px) {
+    .about-main {
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-main {
+        padding: 24px 16px;
+        min-height: auto;
+    }
+    
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
 }

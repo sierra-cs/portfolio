@@ -31,20 +31,6 @@
     font-display: swap;
 }
 
-/* Brand Colors*/
-:root {
-    --Onyx: #262A2E;
-    --Mist: #ABBFB8;
-    --Matcha: #B9CBAF;
-    --Oat: #F1EADA;
-    --Eucalyptus: #3E5034;
-    --Pine: #40534C;
-    --Cedar: #693F0D;
-    --Espresso: #251E0E;
-    --Ash: #E3E4E1;
-
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -187,7 +173,7 @@ label {
 }
 
 /* Mobile Sizing */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .contact-main {
         padding: 30px 24px;
     }
@@ -201,6 +187,10 @@ label {
         flex-direction: row;
         width: 100%;
         gap: 16px;
+    }
+
+    .contact-left {
+        width: 100%;
     }
 
     .contact-divider::before,
@@ -217,6 +207,15 @@ label {
 @media (max-width: 480px) {
     .contact-main {
         padding: 24px 16px;
+    }
+
+    .contact-container {
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .contact-left {
+        width: 100%;
     }
 
     .contact-left h2,

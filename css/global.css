@@ -401,7 +401,7 @@ body::after {
 
 /* Mobile Sizing */
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu-left {
         gap: 10px;
     }
@@ -437,7 +437,6 @@ body::after {
 
     .menu-logo {
         position: relative;
-
     }
 
     .menu-logo::after {
@@ -449,7 +448,31 @@ body::after {
         width: 44px;
         height: 44px;
     }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .bitmoji {
+        height: 70px;
+    }
+
+    .hero-render {
+        height: 70px;
+        width: 70px;
+    }
+
+    .hero-line-one, .hero-line-two {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .home-main {
+        padding: 90px 30px 50px 30px;
+    }
 }
+
+
 
 /* Phone */
 @media (max-width: 480px) {

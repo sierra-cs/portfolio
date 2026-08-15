@@ -31,20 +31,6 @@
     font-display: swap;
 }
 
-/* Brand Colors*/
-:root {
-    --Onyx: #262A2E;
-    --Mist: #ABBFB8;
-    --Matcha: #B9CBAF;
-    --Oat: #F1EADA;
-    --Eucalyptus: #3E5034;
-    --Pine: #40534C;
-    --Cedar: #693F0D;
-    --Espresso: #251E0E;
-    --Ash: #E3E4E1;
-
-}
-
 .lock-screen {
     position: relative;
     width: 100vw;
@@ -175,7 +161,7 @@
 
 /* Mobile Sizing */
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .time {
         font-size: 6rem;
         margin: -2vh;

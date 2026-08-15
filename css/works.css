@@ -31,20 +31,6 @@
     font-display: swap;
 }
 
-/* Brand Colors*/
-:root {
-    --Onyx: #262A2E;
-    --Mist: #ABBFB8;
-    --Matcha: #B9CBAF;
-    --Oat: #F1EADA;
-    --Eucalyptus: #3E5034;
-    --Pine: #40534C;
-    --Cedar: #693F0D;
-    --Espresso: #251E0E;
-    --Ash: #E3E4E1;
-
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -266,7 +252,7 @@ main {
 }
 
 /* Mobile Sizing */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .works-main {
         padding: 30px 24px;
     }
@@ -292,7 +278,7 @@ main {
 }
 
 /* Project Modal */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .project-modal {
         width: 90%;
         padding: 20px;

@@ -32,20 +32,6 @@
     font-display: swap;
 }
 
-/* Brand Colors*/
-:root {
-    --Onyx: #262A2E;
-    --Mist: #ABBFB8;
-    --Matcha: #B9CBAF;
-    --Oat: #F1EADA;
-    --Eucalyptus: #3E5034;
-    --Pine: #40534C;
-    --Cedar: #693F0D;
-    --Espresso: #251E0E;
-    --Ash: #E3E4E1;
-
-}
-
 /* Global Body Styles */
 body {
     font-family: 'Jost', sans-serif;
@@ -112,14 +98,14 @@ h4 {
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
-.colors h3 {
-    font-family: 'Italiana', serif;
-    font-size: 2rem;
-    font-weight: 700;
+#colors h3 {
+    font-size: 1.75rem;
     color: var(--Onyx);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 50px;
 }
 
 /* Each individual color card */
@@ -130,7 +116,7 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem;
     width: 100%;
-    max-width: 240px;
+    max-width: 250px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -365,7 +351,7 @@ section {
 /* Headings across sections */
 section h2 {
     font-family: 'Sora', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -492,44 +478,18 @@ section h2 {
 
 
 
-@media (max-width: 768px) {
-    .page-title h1 {
-        font-size: 1.75rem;
-    }
-
-    #colors h2,
-    h3 {
-        font-size: 1.15rem;
-    }
-
-    #colors h4 {
-        font-size: 1rem;
-    }
-
-    #typography h2 {
-        font-size: 1.15rem;
-    }
-
-    #typography h3 {
-        font-size: 1.05rem;
-    }
-
-    #typography h4 {
-        font-size: 1rem;
-    }
-
-
+@media (max-width: 900px) {
     section {
         padding: 2.5rem 1rem;
     }
 
     .color-card,
     .typography-card {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .swatch-container {
-        width: 150px;
+        width: 500px;
         height: 250px;
     }
 
@@ -538,6 +498,17 @@ section h2 {
         min-height: 250px;
     }
 
+    .color-group {
+        justify-items: center;
+    }
+    
+    .logo-gallery {
+        justify-items: center;
+    }
+
+    #colors h3 {
+        padding-left: 75px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -561,7 +532,7 @@ section h2 {
     }
 
     .swatch-container {
-        width: 200px;
+        width: 280px;
         height: 180px;
         margin: 0 auto;
     }
@@ -578,5 +549,9 @@ section h2 {
 
     h4 {
         font-size: 1rem;
+    }
+
+    .logo-gallery {
+        justify-items: center;
     }
 }
